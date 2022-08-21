@@ -1,0 +1,25 @@
+
+/*Mate*/
+
+
+@font-face {
+    font-family: 'Mate';
+    src: url('./Mate/mate-regular-webfont.woff2') format('woff2'),
+         url('./Mate//mate-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*Merienda*/
+
+
+
+@font-face {
+    font-family: 'Merienda';
+    src: url('./Merienda/merienda-bold-webfont.woff2') format('woff2'),
+         url('./Merienda/merienda-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
