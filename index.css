@@ -305,6 +305,10 @@ header .header-menu-right .header-bars{
 
 .temoignages .testimonials .card-testimonials blockquote{
     margin:25px 0;
+    font-size:1.6rem;
+    font-style:italic;
+    line-height: 1.3;
+    font-weight: 550;
 }
 
 @media only screen and (min-width:501px) and (max-width:767px){
@@ -377,4 +381,134 @@ header .header-menu-right .header-bars{
     .temoignages .testimonials .card-testimonials .testimonials-message{
         height:250px;
     }
+}
+
+
+/*Last Articles*/
+
+.last-articles .article-card{
+    width:100%;
+    border:1px solid #cab5c1;
+    font-size:1.6rem;
+    margin:45px 0;
+}
+
+@media only screen and (min-width:501px){
+    .last-articles .article-card{
+        width:350px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+
+@media only screen and (min-width:750px){
+    .last-articles .articles-list{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .last-articles .article-card{
+        flex:1 320px;
+        max-width:320px;
+        margin-left:0;
+        margin-right:0;
+    }
+}
+
+.last-articles .article-card img{
+    max-width:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.last-articles .article-card .article-body{
+    padding:15px 10px 10px;
+}
+
+.last-articles .article-card .article-body h4{
+    margin:0;
+    font-size:1.7rem;
+}
+
+.last-articles .article-card .article-body a{
+    color: #7f0a52;
+    display: inline-block;
+    padding:13px 30px 13px 5px;
+    font-weight:700;
+    font-size:1.6rem;
+    background-image: url(./images/home/last-articles/arrow-right.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: top 13px right 5px;
+    transition:.3s;
+}
+
+.last-articles .article-card .article-body a:hover{
+    transform: scale(1.05);
+}
+
+/*Gallery d'images*/
+
+.gallery{
+    padding:45px 0;
+}
+
+.gallery .grid-gallery{
+    padding-top:25px;
+}
+
+.gallery .gallery-button {
+    margin:25px 0;
+}
+
+.gallery .gallery-button a{
+    padding:18px 15px;
+    font-weight:700;
+}
+
+.gallery .grid-gallery .grid-item img{
+    width:100%;
+    max-width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+@media only screen and (min-width:501px){
+
+    .gallery .grid-gallery{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        gap:18px;
+    }
+}
+
+@media only screen and (min-width:992px){
+
+    .gallery .grid-gallery{
+        width:60%;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .gallery .grid-gallery .grid-item-2{
+        grid-row: 1 / 3;
+        grid-column: 3/4;
+    }
+
+    .gallery .grid-gallery .grid-item-3{
+        grid-row: 2 / 3;
+        grid-column: 1/3;
+    }
+
+    .gallery .grid-gallery .grid-item-8{
+        grid-column: 2/4;
+        grid-row:4/5
+    }
+
+    .gallery .grid-gallery .grid-item-9{
+        grid-column: 1/3;
+    }
+
 }
