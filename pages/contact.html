@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../styles/leaflet.css">
+    <script src="./../script/leaflet.js"></script>
+    <link rel="stylesheet" href="./../styles/normalize.css">
+    <link rel="stylesheet" href="./../styles/utils.css">
+    <link rel="stylesheet" href="./../styles/global.css">
+    <link rel="stylesheet" href="./../fonts/fonts.css">
+    <link rel="stylesheet" href="./../styles/contact.css">
+    <title>Contactez-nous</title>
+</head>
+
+<body>
+
+    <div class="navbar-open"></div>
+    <!--Header-->
+    <header class="header">
+        <div class="container">
+            <nav class="header-nav" id="header-nav">
+                <div class="nav-close">
+                    <img width="20" src="./../images/icon/times.svg" alt="menu hamburger">
+                </div>
+                <ul>
+                    <li class="header-item">
+                        <a href="./../index.html" class="header-links">
+                            Accueil
+                        </a>
+                    </li>
+
+                    <li class="header-item">
+                        <a href="" class="header-links">
+                            Le restaurant
+                        </a>
+                    </li>
+
+                    <li class="header-item">
+                        <a href="" class="header-links">
+                            Notre gallery
+                        </a>
+                    </li>
+
+                    <li class="header-item">
+                        <a href="" class="header-links">
+                            Contactez-nous
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="logo">
+                <a href="./../index.html">
+                    <img src="./../images/Logo.svg" alt="LanMeal">
+                </a>
+            </div>
+
+            <div class="header-menu-right">
+                <div class="header-contact">
+                    <a href="" class="link-contact">Contactez-nous</a>
+                </div>
+
+                <div class="header-bars" id="bars">
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!--Main-->
+
+    <main>
+        <div class="banner">
+            <div class="container">
+                <div>
+                    <h1>Contactez-nous</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam et sunt fugiat debitis eum consequatur aspernatur ex, a, in sit asperiores nobis iusto explicabo optio quo ratione molestiae consequuntur animi?
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+        <section class="contact-container">
+            <div class="container">
+                <div class="form" id="form">
+                    <form id="contact-form" name="form" novalidate>
+
+                        <div class="field field-name">
+                            <label for="name">Votre nom</label>
+                            <input type="text" name="name" id="name"  required minlength="4" pattern="[A-zÀ-ú].*">
+                            <!--Utiliser pour valider les différentes conditions du champ-->
+                            <div class="error active"></div>
+                            <!--Utiliser pour valider de manière générale le champ-->
+                            <p class="error">
+                                Le nom doit commencer par une lettre et comporter 4 caractères au minimum
+                            </p>
+                        </div>
+
+                        <div class="field field-email">
+                            <label for="email">Votre email</label>
+                            <input type="email" name="email" id="email" required >
+                            <div class="error active"></div>
+                            <p class="error">
+                                Veuillez entrer un email valide
+                            </p>
+                        </div>
+
+                        <div class="field field-tel">
+                            <label for="tel">Votre numero de téléphone</label>
+                            <input type="tel" name="tel" id="tel" required pattern="\+[0-9]{1,4}\s[0-9]{1,10}">
+                            <div class="error active"></div>
+                            <p class="error">
+                                Veuillez entrer un numéro valide
+                            </p>
+                        </div>
+
+                        <div class="field field-objet">
+                            <select name="objet" id="objet" required>
+                                <option value="">Quel est l'objet de votre message ?</option>
+                                <option value="event">Organisation d'un événement</option>
+                                <option value="question">Posez-nous une question</option>
+                            </select>
+                            <div class="error active"></div>
+                            <p class="error">
+                                Veuillez choisir l'objet de votre message
+                            </p>
+                        </div>
+
+                        <div class="field field-place">
+                            <select name="place" id="place" required>
+                                <option value="">Quel restaurant ?</option>
+                                <option value="paris">Paris</option>
+                                <option value="alger">Alger</option>
+                            </select>
+                            <div class="error active"></div>
+                            <p class="error">
+                                Veuillez choisir le restaurant
+                            </p>
+                        </div>
+
+                        <div class="field field-message">
+                            <label for="message">Votre message</label>
+                            <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                            <div class="error active"></div>
+                            <p class="error">
+                                Veuillez entrez votre message
+                            </p>
+                        </div>
+
+                        <button type="submit" class="btn">Envoyez</button>
+                    </form>
+                </div>
+
+
+                <div class="lanmeal-alger">
+                    <h3>Notre Restaurant sur Alger</h3>
+                    <div class="lanmeal-alger_infos">
+                        <!--Les images seront en arrière-plan-->
+                        <div class="infos infos-town">
+                            <span>Alger, Algéria</span>
+                        </div>
+
+                        <div class="infos infos-email">
+                            <span>alger@lanmeal.dz</span>
+                        </div>
+
+                        <div class="infos infos-tel">
+                            <span>+213 791107290</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lanmeal-paris">
+                    <h3>Notre Restaurant sur Paris</h3>
+                    <div class="lanmeal-paris_infos">
+                        <!--Les images seront en arrière-plan-->
+                        <div class="infos infos-town">
+                            <span>Paris, France</span>
+                        </div>
+
+                        <div class="infos infos-email">
+                            <span>paris@lanmeal.fr</span>
+                        </div>
+
+                        <div class="infos infos-tel">
+                            <span>+33 791107290</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-map">
+
+                    <div class="map-container">
+                        <h3>Localisation de nos restaurants</h3>
+                        <!--<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="430" id="gmap_canvas" src="https://maps.google.com/maps?q=alger%20babezzouar&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org"></a><br><style>.mapouter{position:relative;text-align:right;height:430px;}</style><a href="https://www.embedgooglemap.net">google map in html</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:430px;}</style></div></div>-->
+                        <div class="map" id="map"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!--Footer-->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-copyright">
+                Copyright 2022
+            </div>
+            <address class="footer-address">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="./../images/icon/footer/facebook.png" alt="Suivez-nous sur facebook">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <img src="./../images/icon/footer/instagram.png" alt="Suivez-nous sur instagram">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <img src="./../images/icon/footer/twitter.png" alt="Suivez-nous sur twitter">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </address>
+        </div>
+    </footer>
+    <script src="./../script/header.js"></script>
+    <script src="./../script/contact.js"></script>
+</body>
+
+</html>

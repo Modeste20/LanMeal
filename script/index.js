@@ -1,35 +1,4 @@
 
-
-
-const headerBars = document.getElementById('bars')
-const headerNav = document.getElementById('header-nav')
-const bodyNavbar = document.querySelector('.navbar-open')
-
-headerBars.addEventListener('click',(e) => {
-    e.stopPropagation()
-    if(!document.body.classList.contains('navbar-open')){
-        document.body.classList.add('navbar-open')
-    }
-})
-
-headerNav.querySelector('.nav-close').addEventListener('click',() => {
-    if(document.body.classList.contains('navbar-open')){
-        document.body.classList.remove('navbar-open')
-    }
-})
-
-headerNav.addEventListener('click',(e) => {
-    if(document.body.classList.contains('navbar-open')){
-        e.stopPropagation()
-    }
-})
-
-document.body.addEventListener('click',() => {
-    if(document.body.classList.contains('navbar-open')){
-        document.body.classList.remove('navbar-open')
-    }
-})
-
 /* Gestion des radiios des catégory de menus */
 
 const categoryRadios = document.querySelectorAll('.menu .menu-container .menu-category .category-item input[type="radio"]')

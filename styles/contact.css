@@ -1,0 +1,238 @@
+
+/*
+    Banner contact
+*/
+
+.banner {
+    text-align: center;
+}
+
+.banner .container > div{
+    padding:30px 0;
+}
+
+@media only screen and (min-width:960px){
+    .banner .container > div{
+        width:70%;
+        margin:auto;
+    }
+}
+
+.contact-container{
+    padding:50px 0;
+}
+
+/*
+    Lanmeal alger et paris
+*/
+
+
+.contact-container .lanmeal-alger .lanmeal-alger_infos .infos,
+.contact-container .lanmeal-paris .lanmeal-paris_infos .infos{
+    margin-bottom: 25px;
+    font-size:1.8rem;
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    height:30px;
+    line-height: 30px;
+    background-position: left bottom;
+}
+
+.contact-container .lanmeal-alger .lanmeal-alger_infos .infos.infos-town,
+.contact-container .lanmeal-paris .lanmeal-paris_infos .infos.infos-town{
+    background-image: url(./../images/contact/map.png);
+}
+
+.contact-container .lanmeal-alger .lanmeal-alger_infos .infos.infos-email,
+.contact-container .lanmeal-paris .lanmeal-paris_infos .infos.infos-email{
+    background-image: url(./../images/contact/mail.png);
+}
+
+.contact-container .lanmeal-alger .lanmeal-alger_infos .infos.infos-tel,
+.contact-container .lanmeal-paris .lanmeal-paris_infos .infos.infos-tel{
+    background-image: url(./../images/contact/phone.png);
+}
+
+/*
+    Formulaire
+*/
+
+.contact-container .container .form  {
+    width:80%;
+}
+
+.contact-container .container .form form {
+    width:100%;
+    padding-bottom: 30px;
+}
+
+.contact-container .container .form form button{
+    padding:15px 20px;
+    cursor: pointer;
+}
+
+.contact-container .container .form form .field{
+    margin:18px 0 30px;
+    position:relative;
+}
+
+.contact-container .container .form form .field .error{
+    color:red;
+    font-size:1.3rem;
+    display:none;
+    cursor: default;
+    margin:5px;
+}
+
+.contact-container .container .form form .field .error.active{
+    display:block;
+}
+
+.contact-container .container .form form .field select{
+    width:105% !important;
+}
+
+.contact-container .container .form form .field input.invalid,
+.contact-container .container .form form .field select.invalid,
+.contact-container .container .form form .field textarea.invalid{
+    border-color:red
+}
+
+.contact-container .container .form form .field input,
+.contact-container .container .form form .field select,
+.contact-container .container .form form .field textarea{
+    width:100%;
+    outline: none;
+    border:1px solid #4d10368a;
+    border-right:none;
+    border-top:none;
+    border-bottom-left-radius: 20px;
+    padding:8px 9px;
+    font-size:1.6rem;
+    background: transparent;
+    display: block;
+
+    
+}
+
+.contact-container .container .form form .field textarea{
+    resize: none;
+}
+
+.contact-container .container .form form .field label{
+    position:absolute;
+    left:9px;
+    top:9px;
+    font-size:1.5rem;
+    cursor:text;
+    transition:.3s;
+}
+
+.contact-container .container .form form .field label.active{
+    top:-14px;
+    cursor:default
+}
+
+    .contact-container .container > .form,
+    .contact-container .container > .lanmeal-alger,
+    .contact-container .container > .lanmeal-paris,
+    .contact-container .container > .contact-map{
+        margin-bottom:50px;
+    }
+
+@media only screen and (min-width:550px) and (max-width:767px){
+    .contact-container .container > .form,
+    .contact-container .container > .lanmeal-alger,
+    .contact-container .container > .lanmeal-paris,
+    .contact-container .container > .contact-map{
+        width:75%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+
+/*.contact-container .container > .contact-map .maprouter,*/
+.contact-container .container > .contact-map #map{
+    width:100% !important;
+    height:500px;
+    z-index:0;
+}
+
+.contact-container .container > .contact-map #map .leaflet-popup{
+    font-size:1.2rem;
+}
+
+@media only screen and (min-width:768px){
+
+    .contact-container .container{
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+    .contact-container .container > .form,
+    .contact-container .container > .lanmeal-alger,
+    .contact-container .container > .lanmeal-paris,
+    .contact-container .container > .contact-map{
+        flex:1 50% !important;
+    }
+
+    .contact-container .container > .form{
+        order:2;
+    }
+
+    .contact-container .container > .lanmeal-alger{
+        order:1;
+    }
+
+    .contact-container .container > .lanmeal-alger,
+    .contact-container .container > .lanmeal-paris{
+        background-color:#fccbe98f;
+    }
+
+    
+    .contact-container .lanmeal-alger .lanmeal-alger_infos,
+    .contact-container .lanmeal-paris .lanmeal-paris_infos{
+        padding-top:30px;
+    }
+
+    .contact-container .container > .form,
+    .contact-container .container > .lanmeal-alger,
+    .contact-container .container > .lanmeal-paris,
+    .contact-container .container > .contact-map{
+        margin-bottom:0px;
+    }
+
+    .contact-container .container > .lanmeal-alger h3,
+    .contact-container .container > .lanmeal-alger .lanmeal-alger_infos,
+    .contact-container .container > .lanmeal-paris h3,
+    .contact-container .container > .lanmeal-paris .lanmeal-paris_infos{
+        padding-left:30px;
+    }
+
+    .contact-container .container > .lanmeal-alger h3,
+    .contact-container .container > .lanmeal-paris h3{
+        padding-top:20px;
+    }
+
+    .contact-container .container > .contact-map{
+        order:3;
+    }
+
+    .contact-container .container > .contact-map .map-container{
+        padding-top:20px;
+        padding-right:20px
+    }
+
+    .contact-container .container > .lanmeal-paris{
+        order:4
+    }
+
+    /*Formulaire*/
+    .contact-container .container .form form {
+        padding-left:30px;
+        width:80%;
+    }
+
+    
+}
