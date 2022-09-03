@@ -1,0 +1,378 @@
+/*Header*/
+
+header a {
+    color:#fef1f8;
+}
+
+
+header .header-nav ul > li a{
+    color:#fef1f8;
+}
+
+header .header-menu-right .header-bars{
+    background-image: url(./../images/icon/header-bars-white.png);
+}
+
+/*banner*/
+
+.sous-banner {
+    height:60vh;
+}
+
+.banner {
+    /*90*/
+    height:65vh;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#e0d5db;
+    background-size: cover;
+    background-repeat: no-repeat;    
+    transition:background-image .4s;
+}
+
+
+
+.banner.banner-burgers{
+    background-image:url(./../images/lanmeal/banner/banner-bg-image/burgers/banner-bg-burgers.jpg);
+    background-position: center;
+}
+
+.banner.banner-pates{
+    background-image:url(./../images/lanmeal/banner/banner-bg-image/pates/banner-bg-pates.jpg);
+    background-position: center;
+}
+
+.banner.banner-tacos{
+    background-image:url(./../images/home/banner/banner-bg.jpg);
+    background-position: center;
+}
+
+
+@media only screen and (min-width:501px){
+    
+
+.banner.banner-burgers{
+    background-image:url(./../images/lanmeal/banner/banner-bg-image/burgers/banner-bg-burgers-medium.jpg);
+}
+
+.banner.banner-pates{
+    background-image:url(./../images/lanmeal/banner/banner-bg-image/pates/banner-bg-pates-medium.jpg);
+}
+
+.banner.banner-tacos{
+    background-image:url(./../images/home/banner/banner-bg-medium.jpg);
+}
+
+}
+
+@media only screen and (min-width:768px){
+    .banner.banner-burgers{
+        background-image:url(./../images/lanmeal/banner/banner-bg-image/burgers/banner-bg-burgers-large.jpg);
+    }
+    
+    .banner.banner-pates{
+        background-image:url(./../images/lanmeal/banner/banner-bg-image/pates/banner-bg-pates-large.jpg);
+    }
+    
+    .banner.banner-tacos{
+        background-image:url(./../images/home/banner/banner-bg-large.jpg);
+    }
+}
+
+@media only screen and (min-width:992px){
+    .banner.banner-burgers{
+        background-image:url(./../images/lanmeal/banner/banner-bg-image/burgers/banner-bg-burgers-xlarge.jpg);
+    }
+    
+    .banner.banner-pates{
+        background-image:url(./../images/lanmeal/banner/banner-bg-image/pates/banner-bg-pates-xlarge.jpg);
+    }
+    
+    .banner.banner-tacos{
+        background-image:url(./../images/home/banner/banner-bg-x-large.jpg);
+    }
+}
+
+.banner .banner-container .chevron{
+    position:absolute;
+    bottom:40px;
+    background: #cf1e8b;
+    width:30px;
+    height:45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer
+    
+}
+
+.banner .banner-container .chevron.chevron-left{
+    right:100px;
+}
+
+.banner .banner-container .chevron.chevron-right{
+    right:50px;
+}
+
+@media only screen and (min-width:768px){
+    .sous-banner{
+        height:95vh;
+    }
+    .banner{
+        height:100vh;
+    }
+
+    .banner .container .banner-container{
+        width:80%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .banner .banner-container .chevron{
+        top:50%;
+        transform: translateY(-50%);
+        background-color: transparent;
+    }
+
+    .banner .banner-container .chevron.chevron-left{
+        left:35px;
+    }
+    
+    .banner .banner-container .chevron.chevron-right{
+        right:35px;
+    }
+}
+
+@media only screen and (min-width:992px){
+
+    .banner .container .banner-container{
+        width:60%;
+        text-align:center;
+    }
+
+    .banner .banner-container .chevron.chevron-left{
+        left:75px;
+    }
+    
+    .banner .banner-container .chevron.chevron-right{
+        right:75px;
+    }
+}
+
+/*Description*/
+
+.about-lanmeal .lanmeal .lanmeal-image img{
+    max-width:100%;
+}
+
+@media only screen and (min-width:501px){
+    .about-lanmeal .lanmeal{
+        width:85%;
+        margin:30px auto;
+    }
+}
+
+@media only screen and (min-width:800px){
+    .about-lanmeal .lanmeal{
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+        margin-bottom:70px
+    }
+    .about-lanmeal .lanmeal .lanmeal-image{
+        flex:1;
+        order:1;
+    }
+    .about-lanmeal .lanmeal .lanmeal-description{
+        flex:1;
+        padding-right:35px;
+        order:0;
+    }
+}
+
+@media only screen and (min-width:1100px){
+    
+    .about-lanmeal .lanmeal .lanmeal-image{
+        flex:2;
+    }
+    .about-lanmeal .lanmeal .lanmeal-description{
+        flex:3;
+    }
+}
+
+/*Choose lanMeal*/
+.choose-lanmeal{
+    margin-top:40px;
+}
+
+.choose-lanmeal h2 span,
+.about-lanmeal .lanmeal h2 span {
+    color: #cf1e8b;
+}
+
+
+.choose-lanmeal .choose-reasons{
+    margin-top:40px;
+}
+
+.choose-lanmeal .choose-reasons > article{
+    margin-bottom:45px;
+    margin-left:0;
+    margin-right:0;
+    width:auto;
+    padding:15px 10px;
+    border:1px dotted #cf1e8b;
+    transition:all .2s linear
+}
+.choose-lanmeal .choose-reasons > article:hover{
+    transform: translateY(-10px);
+    background:#c7087ece;
+    color:#fef1f8;
+}
+
+
+@media only screen and (min-width:501px){
+    .choose-lanmeal .choose-reasons{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        column-gap: 45px;
+    }
+
+    .choose-lanmeal .choose-reasons > article h3{
+        font-size:1.8rem;
+    }
+    
+    .choose-lanmeal .choose-reasons > article p{
+        font-size:1.6rem;
+        line-height:1.2
+    }
+}
+
+@media only screen and (min-width:1200px){
+    .choose-lanmeal .choose-reasons{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .choose-lanmeal .choose-reasons > article p{
+        font-size:1.5rem;
+    }
+}
+
+/*Team lanMeal*/
+
+.team-lanmeal{
+    margin-top:40px
+}
+
+.team-lanmeal .team-head{
+    text-align:center;
+}
+
+.team-lanmeal .team{
+    padding:45px 0 60px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.team-lanmeal .team > article {
+    width:100%;
+    position:relative;
+    margin-bottom:35px;
+}
+
+.team-lanmeal .team > article .teammates-info{
+   position: absolute;
+   bottom:14px;
+   left:0;
+   right:0;
+   color:#fef1f8;
+   text-align: center;
+}
+
+.team-lanmeal .team > article .teammates-info abbr{
+    text-decoration: none;
+ }
+
+.team-lanmeal .team > article .teammates-info h3{
+    font-size:1.5rem;
+    margin-bottom:0;
+}
+
+.team-lanmeal .team > article .teammates-info p{
+    font-size:1.7rem;
+    margin-top:10px;
+}
+
+@media only screen and (min-width:381px){
+    .team-lanmeal .team > article {
+        width:48%;
+    }
+    .team-lanmeal .team > article .teammates-info h3{
+        font-size:1.7rem;
+    }
+}
+
+@media only screen and (min-width:381px) and (max-width:767px){
+    .team-lanmeal .team > article {
+        margin-bottom:0;
+    }
+
+    .team-lanmeal .team > article:last-child {
+        margin-top:30px;
+    }
+}
+
+@media only screen and (min-width:768px){
+    .team-lanmeal .team > article {
+        width:30%;
+    }
+}
+
+.team-lanmeal .team > article img{
+    max-width:100%;
+    object-fit: cover;
+    width:100%;
+}
+
+@media only screen and (min-width:768px){
+    .team-lanmeal .team-head{
+        width:80%;
+        margin-left:auto;
+        margin-right:auto;
+        padding-top:45px
+    }
+    .team-lanmeal{
+        position:relative;
+    }
+    .team-lanmeal::before{
+        content: '';
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        height:380px;
+        z-index:-1;
+        background-color:#f9e2f0b8;
+        display: block;
+    }
+}
+
+
+
+@media only screen and (min-width:1200px){
+    .team-lanmeal .team-head{
+        width:60%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .team-lanmeal::before{
+        height:450px
+    }
+}
