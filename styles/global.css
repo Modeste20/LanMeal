@@ -115,6 +115,12 @@ header{
     z-index:1;
 }
 
+header .is-disabled a {
+    color:#fd46a8 !important;
+    pointer-events: none;
+    font-weight:900;
+}
+
 header .container{
     display:flex;
     justify-content: space-between;
