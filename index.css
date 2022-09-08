@@ -17,6 +17,11 @@ header .header-menu-right .header-bars{
     background-image: url(./images/icon/header-bars-white.png);
 }
 
+header .logo{
+    background:rgba(255, 255, 255, 0.95);
+    padding:15px;
+}
+
 
 
 /* Banner */

@@ -14,6 +14,7 @@
 
 html{
     font-size:10px;
+    scroll-behavior: smooth;
 }
 
 @media all and (min-width:1500px){
